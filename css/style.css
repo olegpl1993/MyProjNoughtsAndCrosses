@@ -1,0 +1,77 @@
+@import url("nullstyle.css");
+.wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.gameBox {
+  width: 350px;
+  height: 350px;
+  margin: 50px auto;
+}
+
+.gameBox__buttonRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.gameBox__button {
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 25px;
+  width: 100px;
+  text-align: center;
+  padding-top: 5px;
+  -webkit-box-shadow: 3px 3px 3px black;
+          box-shadow: 3px 3px 3px black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+}
+
+.gameBox__button:hover {
+  background-color: #adadad;
+}
+
+.gameBox__button:active {
+  background-color: #383838;
+  color: white;
+  -webkit-transform: translate(3px, 3px);
+          transform: translate(3px, 3px);
+  -webkit-box-shadow: 0px 0px 0px black;
+          box-shadow: 0px 0px 0px black;
+}
+
+.gameBox__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 33.333%;
+}
+
+.gameBox__col {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 110px;
+  text-align: center;
+  width: 33.333%;
+  border: 1px solid black;
+}
+
+.gameBox__col:hover {
+  border: 2px solid black;
+}
+
+.gameBox__col:active {
+  border: 3px solid black;
+}
+
+.gameBox__winnerRow {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 1px solid black;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 20px;
+}

@@ -1,0 +1,65 @@
+@import url("nullstyle.css");
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.gameBox {
+    width: 350px;
+    height: 350px;
+    margin: 50px auto;
+
+    &__buttonRow {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+    &__button {
+        border: 1px solid black;
+        border-radius: 10px;
+        height: 25px;
+        width: 100px;
+        text-align: center;
+        padding-top: 5px;
+        box-shadow: 3px 3px 3px black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 700;
+        &:hover {
+            background-color: rgb(173, 173, 173);
+        }
+        &:active {
+            background-color: rgb(56, 56, 56);
+            color: white;
+            transform: translate(3px, 3px);
+            box-shadow: 0px 0px 0px black;
+        }
+    }
+
+    &__row {
+        display: flex;
+        height: 33.333%;
+    }
+
+    &__col {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 110px;
+        text-align: center;
+        width: 33.333%;
+        border: 1px solid black;
+        &:hover {
+            border: 2px solid black;
+        }
+        &:active {
+            border: 3px solid black;
+        }
+    }
+
+    &__winnerRow {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border: 1px solid black;
+        font-size: 25px;
+        text-align: center;
+        margin-top: 20px;
+    }
+}
