@@ -62,4 +62,22 @@
         text-align: center;
         margin-top: 20px;
     }
+    &__scoreRow {
+        display: flex;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border: 1px solid black;
+        font-size: 25px;
+        text-align: center;
+        margin-top: 20px;
+        justify-content: space-around;
+    }
+    &__textRow {
+        display: flex;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border: 1px solid black;
+        font-size: 25px;
+        text-align: center;
+        margin-top: 20px;
+        justify-content: space-around;
+    }
 }

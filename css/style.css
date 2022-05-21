@@ -75,3 +75,29 @@
   text-align: center;
   margin-top: 20px;
 }
+
+.gameBox__scoreRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 1px solid black;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 20px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.gameBox__textRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 1px solid black;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 20px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}

@@ -5,6 +5,33 @@ let player; // 0 или 1
 let bot;
 let play = 0; //0-игра остановлена, 1-игра работает
 let text = document.getElementById("winnerRow"); //строка победителя
+let playerWin = 0;
+let botWin = 0;
+
+
+//ведет счет
+function score (){
+    if (player == 1 & winners == 1 & play == 0){
+        playerWin++;
+        let playerscortext = document.getElementById("playerScore");
+        playerscortext.textContent = playerWin;
+    }
+    if (player == 0 & winners == 0 & play == 0){
+        playerWin++;
+        let playerscortext = document.getElementById("playerScore");
+        playerscortext.textContent = playerWin;
+    }
+    if (bot == 1 & winners == 1 & play == 0){
+        botWin++;
+        let botscortext = document.getElementById("botScore");
+        botscortext.textContent = botWin;
+    }
+    if (bot == 0 & winners == 0 & play == 0){
+        botWin++;
+        let botscortext = document.getElementById("botScore");
+        botscortext.textContent = botWin;
+    }
+}
 
 //заполняет ячейки содержимым масива
 function render() {
@@ -65,6 +92,7 @@ function winner() {
         winners = array[2];
     }
     renderWinner();
+    score ();
 }
 
 //выводит строку победителя, останавливает игру
